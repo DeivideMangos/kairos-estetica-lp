@@ -1,0 +1,249 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* Kairós Estética - Paleta de Cores Premium */
+  --primary: #C9A46A; /* Dourado champagne */
+  --primary-foreground: #F7F2EC;
+  --sidebar-primary: #C9A46A;
+  --sidebar-primary-foreground: #F7F2EC;
+  --chart-1: #C9A46A;
+  --chart-2: #A88F7E;
+  --chart-3: #6E5A4E;
+  --chart-4: #DCCFC2;
+  --chart-5: #F3D2C3;
+  --radius: 0.5rem; /* Bordas suavemente arredondadas */
+  --background: #F7F2EC; /* Off-white / creme claro */
+  --foreground: #6E5A4E; /* Marrom quente */
+  --card: #F7F2EC;
+  --card-foreground: #6E5A4E;
+  --popover: #F7F2EC;
+  --popover-foreground: #6E5A4E;
+  --secondary: #DCCFC2; /* Bege areia */
+  --secondary-foreground: #6E5A4E;
+  --muted: #A88F7E; /* Taupe */
+  --muted-foreground: #6E5A4E;
+  --accent: #C9A46A; /* Dourado champagne */
+  --accent-foreground: #F7F2EC;
+  --destructive: #E7C7CF; /* Rosa blush */
+  --destructive-foreground: #6E5A4E;
+  --border: #DCCFC2;
+  --input: #F3D2C3;
+  --ring: #C9A46A;
+  --sidebar: #F7F2EC;
+  --sidebar-foreground: #6E5A4E;
+  --sidebar-accent: #C9A46A;
+  --sidebar-accent-foreground: #F7F2EC;
+  --sidebar-border: #DCCFC2;
+  --sidebar-ring: #C9A46A;
+  /* Typography */
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+/* Light theme only - no dark mode for premium aesthetic */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    font-weight: 400;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  
+  h1 {
+    @apply text-5xl md:text-6xl;
+  }
+  
+  h2 {
+    @apply text-4xl md:text-5xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
+  
+  strong, b {
+    font-weight: 600;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   *
+   * This overrides Tailwind's default container behavior to:
+   * - Auto-center content (mx-auto)
+   * - Add responsive horizontal padding
+   * - Set max-width for large screens
+   *
+   * Usage: <div className="container">...</div>
+   *
+   * For custom widths, use max-w-* utilities directly:
+   * <div className="max-w-6xl mx-auto px-4">...</div>
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* 16px - mobile padding */
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem; /* 32px - desktop padding */
+      padding-right: 2rem;
+      max-width: 1280px; /* Standard content width */
+    }
+  }
+
+  /* Kairós Premium Components */
+  
+  .btn-primary {
+    @apply px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg;
+    @apply transition-all duration-200 ease-out;
+    @apply hover:shadow-lg hover:scale-105;
+    @apply active:scale-95;
+    font-family: var(--font-body);
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-3 bg-transparent border-2 border-accent text-accent font-semibold rounded-lg;
+    @apply transition-all duration-200 ease-out;
+    @apply hover:bg-accent hover:text-accent-foreground;
+    font-family: var(--font-body);
+  }
+  
+  .btn-whatsapp {
+    @apply fixed bottom-6 right-6 w-14 h-14 rounded-full bg-green-500 text-white shadow-lg;
+    @apply flex items-center justify-center cursor-pointer;
+    @apply transition-all duration-200 ease-out;
+    @apply hover:scale-110 hover:shadow-xl;
+    @apply z-50;
+  }
+  
+  .card-premium {
+    @apply bg-white rounded-lg p-6 shadow-md;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .section-divider {
+    @apply w-full h-16 bg-gradient-to-b from-background to-secondary;
+  }
+  
+  .text-display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  
+  .text-body {
+    font-family: var(--font-body);
+    font-weight: 400;
+  }
+  
+  .text-subtitle {
+    font-family: var(--font-body);
+    font-weight: 300;
+    @apply text-lg text-muted-foreground;
+  }
+  
+  /* Smooth fade-in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+}
