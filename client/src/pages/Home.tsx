@@ -52,20 +52,24 @@ export default function Home() {
           <div className="px-6 md:px-12 py-12 md:py-0 flex flex-col justify-center">
             <div className="space-y-6 animate-fade-in-up">
               <div>
-                <p className="text-subtitle mb-2">Protocolo de Inverno</p>
+                <p className="text-subtitle mb-2">PROTOCOLO FACIAL DE INVERNO</p>
                 <h1 className="text-display text-5xl md:text-6xl leading-tight">
-                  Sua pele merece mais que cuidado.
+                  Cuidado facial
+personalizado
+para o Inverno
                 </h1>
                 <p className="text-2xl text-muted-foreground mt-4 font-light">
-                  Merece transformação.
+                  Sua pele sente o frio.
+Seu cuidado faz toda diferença.
                 </p>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-md">
-                No inverno, sua pele sofre alterações. É a melhor época para renovar, hidratar e recuperar a luminosidade natural.
+                O inverno pode deixar a pele mais ressecada, sensível e sem viço.
+Na Kairós, cada atendimento começa com uma avaliação individual para indicar o cuidado ideal para a sua pele, com protocolos que devolvem hidratação, luminosidade e bem-estar.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 mb-[25px]">
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary">
-                  Agendar Avaliação
+                  Quero recuperar minha pele
                 </a>
                 <a href="#protocolo" className="btn-secondary">
                   Conhecer o Protocolo
@@ -77,7 +81,7 @@ export default function Home() {
           {/* Hero Image */}
           <div className="relative h-full min-h-[600px] overflow-hidden">
             <img
-              src="/foto1.webp"
+              src="/foto1.1.jpg"
               alt="Protocolo de Inverno"
               className="w-full h-full object-cover"
             />
@@ -87,9 +91,43 @@ export default function Home() {
       </section>
 
       {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-background via-border to-background"></div>
+<div className="h-px bg-gradient-to-r from-background via-border to-background"></div>
 
-      {/* Storytelling Section */}
+{/* Video Institucional */}
+<section className="py-20 bg-background">
+  <div className="container max-w-5xl">
+
+    <div className="text-center mb-10">
+      <p className="text-subtitle mb-2">CONHEÇA A KAIRÓS</p>
+
+      <h2 className="text-display text-4xl md:text-5xl mb-4">
+        Mais que estética,
+        uma experiência de cuidado.
+      </h2>
+
+      <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+        Conheça nosso espaço, nossa estrutura e o ambiente preparado
+        para proporcionar conforto, acolhimento e resultados reais.
+      </p>
+    </div>
+
+    <div className="overflow-hidden rounded-3xl shadow-2xl">
+      <video
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+  className="w-full h-auto object-cover rounded-3xl"
+>
+        <source src="/clinica.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+  </div>
+</section>
+
+{/* Storytelling Section */}
       <section className="bg-secondary py-16 md:py-24">
         <div className="container max-w-4xl">
           <div className="space-y-8 text-center">
@@ -288,20 +326,20 @@ export default function Home() {
           <div className="space-y-6">
             {[
               {
-                title: "Limpeza Profunda Premium",
-                desc: "Remoção completa de impurezas com tecnologia de ponta",
-                image: "/foto2.webp"
-              },
-              {
-                title: "Hidratação Intensiva",
-                desc: "Reposição de umidade com ativos premium",
-                image: "/foto3.webp"
-              },
-              {
-                title: "Revitalização Celular",
-                desc: "Estimulação de colágeno e elastina",
-                image: "/foto1.webp"
-              },
+    title: "Recepção Aconchegante",
+    desc: "Um ambiente preparado para receber você com conforto e tranquilidade.",
+    image: "/entrada.png"
+  },
+  {
+    title: "Sala de Atendimento",
+    desc: "Espaço reservado e preparado para um atendimento personalizado.",
+    image: "/fotoambiente.png"
+  },
+  {
+    title: "Estrutura Premium",
+    desc: "Cada detalhe pensado para proporcionar bem-estar e segurança.",
+    image: "/ambiente1.png"
+  },
             ].map((proc, idx) => (
               <Card key={idx} className="overflow-hidden border-border shadow-sm hover:shadow-md transition-shadow">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
@@ -327,7 +365,7 @@ export default function Home() {
             <div className="order-2 md:order-1">
               <div className="relative overflow-hidden rounded-lg shadow-lg">
                 <img
-                  src="/foto3.webp"
+                  src="foto1.1.jpg"
                   alt="Rosana Sales"
                   className="w-full h-full object-cover"
                 />
@@ -364,46 +402,52 @@ export default function Home() {
       </section>
 
       {/* Galeria Antes e Depois */}
-      <section className="py-16 md:py-24 bg-secondary">
-        <div className="container max-w-5xl">
-          <h2 className="text-display text-4xl md:text-5xl text-center mb-4">
-            Resultados Reais
-          </h2>
-          <p className="text-center text-muted-foreground mb-12">
-            Veja a transformação que o Protocolo de Inverno proporciona
-          </p>
+      {/*
+<section className="py-16 md:py-24 bg-secondary">
+  <div className="container max-w-5xl">
+    <h2 className="text-display text-4xl md:text-5xl text-center mb-4">
+      Resultados Reais
+    </h2>
+    <p className="text-center text-muted-foreground mb-12">
+      Veja a transformação que o Protocolo de Inverno proporciona
+    </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Pele Iluminada",
-                desc: "Renovação completa com brilho restaurado",
-                image: "/foto1.webp"
-              },
-              {
-                title: "Textura Refinada",
-                desc: "Suavidade e uniformidade visível",
-                image: "/foto2.webp"
-              },
-              {
-                title: "Hidratação Profunda",
-                desc: "Pele mais macia e elástica",
-                image: "/foto1.webp"
-              },
-            ].map((result, idx) => (
-              <Card key={idx} className="overflow-hidden border-border shadow-sm hover:shadow-lg transition-all">
-                <div className="h-64 overflow-hidden">
-                  <img src={result.image} alt={result.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-display text-lg mb-2">{result.title}</h3>
-                  <p className="text-sm text-muted-foreground">{result.desc}</p>
-                </div>
-              </Card>
-            ))}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[
+        {
+          title: "Pele Iluminada",
+          desc: "Renovação completa com brilho restaurado",
+          image: "/foto1.webp"
+        },
+        {
+          title: "Textura Refinada",
+          desc: "Suavidade e uniformidade visível",
+          image: "/foto2.webp"
+        },
+        {
+          title: "Hidratação Profunda",
+          desc: "Pele mais macia e elástica",
+          image: "/foto1.webp"
+        },
+      ].map((result, idx) => (
+        <Card key={idx} className="overflow-hidden border-border shadow-sm hover:shadow-lg transition-all">
+          <div className="h-64 overflow-hidden">
+            <img
+              src={result.image}
+              alt={result.title}
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
           </div>
-        </div>
-      </section>
+          <div className="p-6">
+            <h3 className="text-display text-lg mb-2">{result.title}</h3>
+            <p className="text-sm text-muted-foreground">{result.desc}</p>
+          </div>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+*/}
 
       {/* Formulário de Contato */}
       <section className="py-16 md:py-24">
@@ -623,9 +667,11 @@ export default function Home() {
         className="btn-whatsapp"
         title="Abrir WhatsApp"
       >
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.255.949c-1.238.503-2.37 1.237-3.285 2.153-1.914 1.914-2.972 4.452-2.972 7.15 0 5.338 4.34 9.678 9.678 9.678 1.181 0 2.336-.206 3.453-.609l3.582 1.179-.309-3.172c.473-1.119.745-2.331.745-3.582 0-5.338-4.34-9.678-9.678-9.678z" />
-        </svg>
+        <img
+  src="/whatsapp.png"
+  alt="WhatsApp"
+  className="w-6 h-6"
+/>
       </a>
     </div>
   );
