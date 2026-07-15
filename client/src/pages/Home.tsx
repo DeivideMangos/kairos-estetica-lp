@@ -30,7 +30,7 @@ export default function Home() {
       <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Kairós" className="h-10 w-10" />
+            <img src="/fotoclinica.png" alt="Kairós" className="h-10 w-10" />
             <span className="text-2xl font-bold text-display text-accent">Kairós</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
@@ -617,7 +617,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <img src="/logo.png" alt="Kairós" className="h-8 w-8" />
+                <img src="/fotoclinica.png" alt="Kairós" className="h-8 w-8" />
                 <span className="text-lg font-bold text-display text-accent">Kairós</span>
               </div>
               <p className="text-sm text-muted-foreground">

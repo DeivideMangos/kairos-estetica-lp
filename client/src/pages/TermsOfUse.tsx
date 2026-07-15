@@ -7,7 +7,7 @@ export default function TermsOfUse() {
       <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Kairós" className="h-10 w-10" />
+            <img src="/fotoclinica.png" alt="Kairós" className="h-10 w-10" />
             <span className="text-2xl font-bold text-display text-accent">Kairós</span>
           </div>
           <a href="/" className="text-sm hover:text-accent transition">← Voltar</a>
