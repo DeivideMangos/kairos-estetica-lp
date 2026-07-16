@@ -110,7 +110,7 @@
   }
   
   h2 {
-    @apply text-4xl md:text-5xl;
+    @apply text-3xl md:text-5xl;
   }
   
   h3 {

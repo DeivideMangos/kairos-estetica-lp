@@ -15,9 +15,9 @@ export default function PrivacyPolicy() {
       </header>
 
       {/* Content */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-20">
         <div className="container max-w-3xl">
-          <h1 className="text-display text-4xl md:text-5xl mb-8">Política de Privacidade</h1>
+          <h1 className="text-display text-3xl md:text-5xl mb-8">Política de Privacidade</h1>
           
           <div className="space-y-8 text-muted-foreground leading-relaxed">
             <div>

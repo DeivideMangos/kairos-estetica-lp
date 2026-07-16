@@ -33,7 +33,7 @@ export default function Home() {
             <img src="/fotoclinica.png" alt="Kairós" className="h-10 w-10" />
             <span className="text-2xl font-bold text-display text-accent">Kairós</span>
           </div>
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-5 md:p-8">
             <a href="#protocolo" className="text-sm hover:text-accent transition">Protocolo</a>
             <a href="#beneficios" className="text-sm hover:text-accent transition">Benefícios</a>
             <a href="#como-funciona" className="text-sm hover:text-accent transition">Como Funciona</a>
@@ -50,7 +50,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center min-h-[600px]">
           {/* Text Content */}
           <div className="px-6 md:px-12 py-12 md:py-0 flex flex-col justify-center">
-            <div className="space-y-6 animate-fade-in-up">
+            <div className="space-y-4 md:space-y-6 animate-fade-in-up">
               <div>
                 <p className="text-subtitle mb-2">PROTOCOLO FACIAL DE INVERNO</p>
                 <h1 className="text-display text-5xl md:text-6xl leading-tight">
@@ -100,7 +100,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
     <div className="text-center mb-10">
       <p className="text-subtitle mb-2">CONHEÇA A KAIRÓS</p>
 
-      <h2 className="text-display text-4xl md:text-5xl mb-4">
+      <h2 className="text-display text-3xl md:text-5xl mb-4">
         Mais que estética,
         uma experiência de cuidado.
       </h2>
@@ -128,10 +128,10 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
 </section>
 
 {/* Storytelling Section */}
-      <section className="bg-secondary py-16 md:py-24">
+      <section className="bg-secondary py-10 md:py-20">
         <div className="container max-w-4xl">
           <div className="space-y-8 text-center">
-            <h2 className="text-display text-4xl md:text-5xl">
+            <h2 className="text-display text-3xl md:text-5xl">
               Por que cuidar da pele no inverno?
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -159,17 +159,17 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
       </section>
 
       {/* Protocolo Section */}
-      <section id="protocolo" className="py-16 md:py-24">
+      <section id="protocolo" className="py-10 md:py-20">
         <div className="container max-w-4xl">
-          <h2 className="text-display text-4xl md:text-5xl text-center mb-4">
+          <h2 className="text-display text-3xl md:text-5xl text-center mb-4">
             O Protocolo de Inverno
           </h2>
-          <p className="text-center text-muted-foreground mb-12">
+          <p className="text-center text-muted-foreground mb-8 md:mb-12">
             Um programa completo e personalizado para transformar sua pele
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="p-8 border-border shadow-sm hover:shadow-md transition-shadow">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:p-8">
+            <Card className="p-5 md:p-8 border-border shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-display text-2xl mb-4">Como Funciona</h3>
               <ul className="space-y-4">
                 <li className="flex gap-3">
@@ -203,7 +203,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
               </ul>
             </Card>
 
-            <Card className="p-8 border-border shadow-sm hover:shadow-md transition-shadow">
+            <Card className="p-5 md:p-8 border-border shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-display text-2xl mb-4">Para Quem é Indicado</h3>
               <p className="text-muted-foreground mb-6">
                 O Protocolo de Inverno é ideal para quem busca:
@@ -236,9 +236,9 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
       </section>
 
       {/* Benefícios Section */}
-      <section id="beneficios" className="bg-secondary py-16 md:py-24">
+      <section id="beneficios" className="bg-secondary py-10 md:py-20">
         <div className="container">
-          <h2 className="text-display text-4xl md:text-5xl text-center mb-12">
+          <h2 className="text-display text-3xl md:text-5xl text-center mb-8 md:mb-12">
             Benefícios do Protocolo
           </h2>
 
@@ -262,7 +262,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
       </section>
 
       {/* Bloco de Investimento */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-background to-secondary/30">
+      <section className="py-10 md:py-20 bg-gradient-to-b from-background to-secondary/30">
         <div className="container max-w-3xl">
           <div className="text-center space-y-8">
             {/* Ícone decorativo */}
@@ -271,7 +271,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
             </div>
 
             {/* Título */}
-            <h2 className="text-display text-4xl md:text-5xl">
+            <h2 className="text-display text-3xl md:text-5xl">
               Um momento de cuidado para sua pele neste inverno.
             </h2>
 
@@ -314,51 +314,112 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
       </section>
 
       {/* Procedimentos Section */}
-      <section id="como-funciona" className="py-16 md:py-24">
-        <div className="container max-w-4xl">
-          <h2 className="text-display text-4xl md:text-5xl text-center mb-4">
-            Procedimentos em Destaque
-          </h2>
-          <p className="text-center text-muted-foreground mb-12">
-            Tecnologias avançadas para resultados comprovados
+<section id="como-funciona" className="py-10 md:py-20">
+  <div className="container max-w-5xl">
+    <h2 className="text-display text-3xl md:text-5xl text-center mb-4">
+      Conheça a Experiência Kairós
+    </h2>
+
+    <p className="text-center text-muted-foreground mb-8 md:mb-12 max-w-3xl mx-auto">
+      Um ambiente preparado para oferecer conforto, acolhimento e tratamentos
+      personalizados para cada necessidade da sua pele.
+    </p>
+
+    <div className="space-y-4 md:space-y-6">
+
+      {[
+        {
+          title: "Recepção Aconchegante",
+          desc: "Um ambiente preparado para receber você com conforto, tranquilidade e cuidado desde o primeiro momento.",
+          image: "/entrada.png"
+        },
+        {
+          title: "Sala de Atendimento",
+          desc: "Espaço reservado e preparado para proporcionar um atendimento personalizado e humanizado.",
+          image: "/fotoambiente.png"
+        },
+        {
+          title: "Estrutura Premium",
+          desc: "Cada detalhe foi pensado para proporcionar bem-estar, segurança e uma experiência única.",
+          image: "/ambiente1.png"
+        },
+      ].map((proc, idx) => (
+        <Card
+          key={idx}
+          className="overflow-hidden border-border shadow-sm hover:shadow-lg transition-all duration-300"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <div className="p-5 md:p-8 flex flex-col justify-center">
+              <h3 className="text-display text-2xl mb-3">{proc.title}</h3>
+              <p className="text-muted-foreground text-lg">{proc.desc}</p>
+            </div>
+
+            <div className="h-48 md:h-auto overflow-hidden">
+              <img
+                src={proc.image}
+                alt={proc.title}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+        </Card>
+      ))}
+
+      {/* Resultado Real */}
+      <Card className="overflow-hidden border-border shadow-lg">
+        <div className="p-5 md:p-8 text-center">
+          <h3 className="text-display text-3xl mb-4">
+            Resultados Reais
+          </h3>
+
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+            Mais do que estética, resultados que fortalecem a autoestima e promovem saúde para a pele.
           </p>
 
-          <div className="space-y-6">
-            {[
-              {
-    title: "Recepção Aconchegante",
-    desc: "Um ambiente preparado para receber você com conforto e tranquilidade.",
-    image: "/entrada.png"
-  },
-  {
-    title: "Sala de Atendimento",
-    desc: "Espaço reservado e preparado para um atendimento personalizado.",
-    image: "/fotoambiente.png"
-  },
-  {
-    title: "Estrutura Premium",
-    desc: "Cada detalhe pensado para proporcionar bem-estar e segurança.",
-    image: "/ambiente1.png"
-  },
-            ].map((proc, idx) => (
-              <Card key={idx} className="overflow-hidden border-border shadow-sm hover:shadow-md transition-shadow">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-                  <div className="p-8 flex flex-col justify-center">
-                    <h3 className="text-display text-2xl mb-2">{proc.title}</h3>
-                    <p className="text-muted-foreground">{proc.desc}</p>
-                  </div>
-                  <div className="h-64 md:h-auto overflow-hidden">
-                    <img src={proc.image} alt={proc.title} className="w-full h-full object-cover" />
-                  </div>
-                </div>
-              </Card>
-            ))}
+          <img
+            src="/antesedepois.jpg"
+            alt="Antes e depois de limpeza de pele"
+            className="max-w-md mx-auto"
+          />
+
+          <div className="mt-8">
+            <h4 className="text-display text-2xl mb-4">
+              Limpeza de Pele Profissional
+            </h4>
+
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+              Resultado real após protocolo personalizado de limpeza de pele,
+              promovendo redução da oleosidade, remoção de impurezas e melhora
+              visível da textura e aparência da pele.
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-3 mt-6">
+              <span className="px-4 py-2 rounded-full bg-secondary text-sm">
+                ✨ Redução da oleosidade
+              </span>
+
+              <span className="px-4 py-2 rounded-full bg-secondary text-sm">
+                ✨ Pele mais uniforme
+              </span>
+
+              <span className="px-4 py-2 rounded-full bg-secondary text-sm">
+                ✨ Menos impurezas
+              </span>
+
+              <span className="px-4 py-2 rounded-full bg-secondary text-sm">
+                ✨ Mais autoestima
+              </span>
+            </div>
           </div>
         </div>
-      </section>
+      </Card>
+
+    </div>
+  </div>
+</section>
 
       {/* Seção Sobre a Profissional */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-background to-secondary/20">
+      <section className="py-10 md:py-20 bg-gradient-to-b from-background to-secondary/20">
         <div className="container max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Foto */}
@@ -373,10 +434,10 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
             </div>
 
             {/* Texto */}
-            <div className="order-1 md:order-2 space-y-6">
+            <div className="order-1 md:order-2 space-y-4 md:space-y-6">
               <div>
                 <p className="text-subtitle mb-2">Quem é a Kairós</p>
-                <h2 className="text-display text-4xl md:text-5xl">
+                <h2 className="text-display text-3xl md:text-5xl">
                   Meu nome é Rosana Sales.
                 </h2>
               </div>
@@ -403,12 +464,12 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
 
       {/* Galeria Antes e Depois */}
       {/*
-<section className="py-16 md:py-24 bg-secondary">
+<section className="py-10 md:py-20 bg-secondary">
   <div className="container max-w-5xl">
-    <h2 className="text-display text-4xl md:text-5xl text-center mb-4">
+    <h2 className="text-display text-3xl md:text-5xl text-center mb-4">
       Resultados Reais
     </h2>
-    <p className="text-center text-muted-foreground mb-12">
+    <p className="text-center text-muted-foreground mb-8 md:mb-12">
       Veja a transformação que o Protocolo de Inverno proporciona
     </p>
 
@@ -450,17 +511,17 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
 */}
 
       {/* Formulário de Contato */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-20">
         <div className="container max-w-2xl">
-          <h2 className="text-display text-4xl md:text-5xl text-center mb-4">
+          <h2 className="text-display text-3xl md:text-5xl text-center mb-4">
             Prefere que a gente entre em contato?
           </h2>
-          <p className="text-center text-muted-foreground mb-12">
+          <p className="text-center text-muted-foreground mb-8 md:mb-12">
             Deixe seus dados e entraremos em contato em breve
           </p>
 
-          <Card className="p-8 border-border">
-            <form className="space-y-6" onSubmit={handleFormSubmit}>
+          <Card className="p-5 md:p-8 border-border">
+            <form className="space-y-4 md:space-y-6" onSubmit={handleFormSubmit}>
               <div>
                 <label className="block text-sm font-medium mb-2">Nome completo</label>
                 <input
@@ -510,9 +571,9 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-secondary py-16 md:py-24">
+      <section className="bg-secondary py-10 md:py-20">
         <div className="container max-w-3xl">
-          <h2 className="text-display text-4xl md:text-5xl text-center mb-12">
+          <h2 className="text-display text-3xl md:text-5xl text-center mb-8 md:mb-12">
             Perguntas Frequentes
           </h2>
 
@@ -524,7 +585,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
               },
               {
                 q: "Dói durante o procedimento?",
-                a: "Não. Utilizamos técnicas e produtos que garantem conforto total. Você pode sentir apenas uma leve sensação de formigamento."
+                a: "Utilizamos técnicas e produtos que garantem conforto total."
               },
               {
                 q: "Existe período de recuperação?",
@@ -560,17 +621,17 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
       </section>
 
       {/* Contato Section */}
-      <section id="contato" className="py-16 md:py-24">
+      <section id="contato" className="py-10 md:py-20">
         <div className="container max-w-4xl">
-          <h2 className="text-display text-4xl md:text-5xl text-center mb-4">
+          <h2 className="text-display text-3xl md:text-5xl text-center mb-4">
             Entre em Contato
           </h2>
-          <p className="text-center text-muted-foreground mb-12">
+          <p className="text-center text-muted-foreground mb-8 md:mb-12">
             Estamos prontos para transformar sua pele
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="p-8 border-border text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:p-8">
+            <Card className="p-5 md:p-8 border-border text-center">
               <MapPin className="w-10 h-10 text-accent mx-auto mb-4" />
               <h3 className="text-display text-lg mb-2">Localização</h3>
               <p className="text-sm text-muted-foreground">
@@ -579,17 +640,17 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
               </p>
             </Card>
 
-            <Card className="p-8 border-border text-center">
+            <Card className="p-5 md:p-8 border-border text-center">
               <Phone className="w-10 h-10 text-accent mx-auto mb-4" />
               <h3 className="text-display text-lg mb-2">Telefone</h3>
               <p className="text-sm text-muted-foreground">
                 <a href="tel:+5512991878809" className="hover:text-accent transition">
-                  (12) 99187-8809
+                  (12) 98898-0812
                 </a>
               </p>
             </Card>
 
-            <Card className="p-8 border-border text-center">
+            <Card className="p-5 md:p-8 border-border text-center">
               <Mail className="w-10 h-10 text-accent mx-auto mb-4" />
               <h3 className="text-display text-lg mb-2">WhatsApp</h3>
               <a
@@ -614,7 +675,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
       {/* Footer */}
       <footer className="bg-secondary border-t border-border py-12">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:p-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <img src="/fotoclinica.png" alt="Kairós" className="h-8 w-8" />
