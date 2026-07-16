@@ -376,11 +376,11 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
             Mais do que estética, resultados que fortalecem a autoestima e promovem saúde para a pele.
           </p>
 
-          <img
-            src="/antesedepois.jpg"
-            alt="Antes e depois de limpeza de pele"
-            className="max-w-md mx-auto"
-          />
+  <img
+    src="/antesedepois.jpg"
+    alt="Antes e depois de limpeza de pele"
+    className="w-full max-w-sm md:max-w-md rounded-2xl shadow-lg"
+  />
 
           <div className="mt-8">
             <h4 className="text-display text-2xl mb-4">
