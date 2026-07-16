@@ -379,7 +379,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
   <img
     src="/antesedepois.jpg"
     alt="Antes e depois de limpeza de pele"
-    className="w-full max-w-sm md:max-w-md rounded-2xl shadow-lg"
+    className="block w-full max-w-sm md:max-w-lg mx-auto rounded-2xl shadow-lg"
   />
 
           <div className="mt-8">
