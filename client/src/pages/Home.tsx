@@ -651,18 +651,24 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:p-8">
             <Card className="p-5 md:p-8 border-border text-center">
-              <MapPin className="w-10 h-10 text-accent mx-auto mb-4" />
-              <h3 className="text-display text-lg mb-2">Localização</h3>
-              <a
-      href="https://www.google.com/maps/search/?api=1&query=Rua+Juiz+David+Barrilli,+304+-+Parque+Res.+Aquarius,+São+José+dos+Campos+-+SP,+12246-200"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-muted-foreground hover:text-accent transition-colors leading-relaxed"
-    >
-      Aquarius - 
-      São José dos Campos - SP<br />
-    </a>
-            </Card>
+  <a
+    href="https://www.google.com/maps/search/?api=1&query=Rua+Juiz+David+Barrilli,+304+-+Parque+Res.+Aquarius,+São+José+dos+Campos+-+SP,+12246-200"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group"
+  >
+    <MapPin className="w-10 h-10 text-accent mx-auto mb-4 transition-transform duration-300 group-hover:scale-110" />
+
+    <h3 className="text-display text-lg mb-2 group-hover:text-accent transition-colors">
+      Localização
+    </h3>
+
+    <p className="text-muted-foreground group-hover:text-accent transition-colors leading-relaxed">
+      Aquarius -<br />
+      São José dos Campos - SP
+    </p>
+  </a>
+</Card>
 
             <Card className="p-5 md:p-8 border-border text-center">
               <Phone className="w-10 h-10 text-accent mx-auto mb-4" />
