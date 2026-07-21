@@ -36,7 +36,6 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-5 md:p-8">
             <a href="#protocolo" className="text-sm hover:text-accent transition">Protocolo</a>
             <a href="#beneficios" className="text-sm hover:text-accent transition">Benefícios</a>
-            <a href="#como-funciona" className="text-sm hover:text-accent transition">Como Funciona</a>
             <a href="#contato" className="text-sm hover:text-accent transition">Contato</a>
           </nav>
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm">
@@ -235,31 +234,51 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
         </div>
       </section>
 
-      {/* Benefícios Section */}
-      <section id="beneficios" className="bg-secondary py-10 md:py-20">
-        <div className="container">
-          <h2 className="text-display text-3xl md:text-5xl text-center mb-8 md:mb-12">
-            Benefícios do Protocolo
-          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { icon: Sparkles, title: "Pele Renovada", desc: "Textura mais suave e uniforme" },
-              { icon: Droplets, title: "Mais Luminosidade", desc: "Brilho natural restaurado" },
-              { icon: Heart, title: "Hidratação Profunda", desc: "Pele mais macia e elástica" },
-              { icon: Zap, title: "Rejuvenescimento", desc: "Redução de linhas de expressão" },
-              { icon: Shield, title: "Uniformização", desc: "Tom de pele mais homogêneo" },
-              { icon: Smile, title: "Autoestima", desc: "Bem-estar e confiança" },
-            ].map((benefit, idx) => (
-              <Card key={idx} className="p-6 border-border shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
-                <benefit.icon className="w-10 h-10 text-accent mb-4" />
-                <h3 className="text-display text-lg mb-2">{benefit.title}</h3>
-                <p className="text-sm text-muted-foreground">{benefit.desc}</p>
-              </Card>
-            ))}
+{/* Benefícios */}
+<section id="beneficios" className="bg-secondary py-10 md:py-20">
+  <div className="container max-w-5xl">
+    <h2 className="text-display text-3xl md:text-5xl text-center mb-4">
+      Benefícios do Protocolo
+    </h2>
+
+    <p className="text-center text-muted-foreground mb-8 md:mb-12 max-w-2xl mx-auto">
+      Um tratamento completo para renovar sua pele, devolver o viço natural e
+      proporcionar mais saúde, beleza e autoestima.
+    </p>
+
+    <Card className="p-6 md:p-10 border-border shadow-lg">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        {[
+          { icon: Sparkles, title: "Pele Renovada", desc: "Textura mais suave e uniforme." },
+          { icon: Droplets, title: "Mais Luminosidade", desc: "Brilho natural restaurado." },
+          { icon: Heart, title: "Hidratação Profunda", desc: "Pele mais macia e saudável." },
+          { icon: Zap, title: "Rejuvenescimento", desc: "Redução da aparência de linhas finas." },
+          { icon: Shield, title: "Uniformização", desc: "Tom da pele mais homogêneo." },
+          { icon: Smile, title: "Mais Autoestima", desc: "Sinta-se mais confiante todos os dias." },
+        ].map((benefit, idx) => (
+          <div key={idx} className="flex items-start gap-4">
+            <div className="flex-shrink-0">
+              <benefit.icon className="w-9 h-9 text-accent" />
+            </div>
+
+            <div>
+              <h3 className="text-display text-lg mb-1">
+                {benefit.title}
+              </h3>
+
+              <p className="text-sm text-muted-foreground">
+                {benefit.desc}
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        ))}
+
+      </div>
+    </Card>
+  </div>
+</section>
 
       {/* Bloco de Investimento */}
       <section className="py-10 md:py-20 bg-gradient-to-b from-background to-secondary/30">
@@ -634,10 +653,15 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
             <Card className="p-5 md:p-8 border-border text-center">
               <MapPin className="w-10 h-10 text-accent mx-auto mb-4" />
               <h3 className="text-display text-lg mb-2">Localização</h3>
-              <p className="text-sm text-muted-foreground">
-                São José dos Campos, SP<br />
-                <span className="text-xs">Endereço completo fornecido ao agendar</span>
-              </p>
+              <a
+      href="https://www.google.com/maps/search/?api=1&query=Rua+Juiz+David+Barrilli,+304+-+Parque+Res.+Aquarius,+São+José+dos+Campos+-+SP,+12246-200"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-muted-foreground hover:text-accent transition-colors leading-relaxed"
+    >
+      Aquarius - 
+      São José dos Campos - SP<br />
+    </a>
             </Card>
 
             <Card className="p-5 md:p-8 border-border text-center">
@@ -691,7 +715,6 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="#protocolo" className="hover:text-accent transition">Protocolo</a></li>
                 <li><a href="#beneficios" className="hover:text-accent transition">Benefícios</a></li>
-                <li><a href="#como-funciona" className="hover:text-accent transition">Como Funciona</a></li>
                 <li><a href="#contato" className="hover:text-accent transition">Contato</a></li>
               </ul>
             </div>
