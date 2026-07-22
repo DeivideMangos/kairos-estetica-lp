@@ -315,7 +315,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
             <div className="space-y-2">
               <p className="text-muted-foreground text-sm">Limpeza de Pele + Peeling de Diamante (quando indicado)</p>
               <p className="text-5xl md:text-6xl text-accent font-light tracking-wide">
-                R$ 169,90
+                R$ 179,90
               </p>
             </div>
 
