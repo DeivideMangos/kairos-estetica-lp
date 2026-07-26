@@ -13,15 +13,40 @@ import { useState } from "react";
 
 export default function Home() {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
-  const [formData, setFormData] = useState({ nome: '', whatsapp: '', horario: 'Manhã (8h - 12h)' });
 
-  const whatsappLink = "https://wa.me/5512988980812?text=Olá%20Kairós!%20Gostaria%20de%20agendar%20uma%20avaliação%20para%20o%20Protocolo%20de%20Inverno.";
+  const [formData, setFormData] = useState({
+    nome: "",
+    whatsapp: "",
+    horario: "Manhã (8h - 12h)",
+  });
+
+  const whatsappLink =
+    "https://wa.me/5512988980812?text=Olá%20Kairós!%20Gostaria%20de%20agendar%20uma%20avaliação%20para%20o%20Protocolo%20de%20Inverno.";
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mensagem = `Olá! Meu nome é ${formData.nome}. Gostaria de agendar uma avaliação. Melhor horário: ${formData.horario}`;
-    const whatsappUrl = `https://wa.me/5512988980812?text=${encodeURIComponent(mensagem)}`;
-    window.open(whatsappUrl, '_blank');
+
+    const mensagem = `Olá, Kairós!
+
+Meu nome é ${formData.nome}.
+
+Meu WhatsApp é: ${formData.whatsapp}.
+
+Gostaria de agendar uma avaliação para o Protocolo de Inverno.
+
+Melhor horário para contato: ${formData.horario}.`;
+
+    // Dispara os eventos do Meta Pixel
+    if (typeof window.fbq !== "undefined") {
+      window.fbq("track", "Contact");
+      window.fbq("track", "Lead");
+    }
+
+    const whatsappUrl = `https://wa.me/5512988980812?text=${encodeURIComponent(
+      mensagem
+    )}`;
+
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
@@ -38,9 +63,20 @@ export default function Home() {
             <a href="#beneficios" className="text-sm hover:text-accent transition">Benefícios</a>
             <a href="#contato" className="text-sm hover:text-accent transition">Contato</a>
           </nav>
-          <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm">
-            Agendar
-          </a>
+          <a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-primary text-sm"
+  onClick={() => {
+    if (typeof window.fbq !== "undefined") {
+      window.fbq("track", "Contact");
+      window.fbq("track", "Lead");
+    }
+  }}
+>
+  Agendar
+</a>
         </div>
       </header>
 
@@ -67,9 +103,20 @@ Seu cuidado faz toda diferença.
 Na Kairós, cada atendimento começa com uma avaliação individual para indicar o cuidado ideal para a sua pele, com protocolos que devolvem hidratação, luminosidade e bem-estar.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4 mb-[25px]">
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary">
-                  Quero recuperar minha pele
-                </a>
+                <a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-primary"
+  onClick={() => {
+    if (typeof window.fbq !== "undefined") {
+      window.fbq("track", "Contact");
+      window.fbq("track", "Lead");
+    }
+  }}
+>
+  Quero recuperar minha pele
+</a>
                 <a href="#protocolo" className="btn-secondary">
                   Conhecer o Protocolo
                 </a>
@@ -321,13 +368,19 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
 
             {/* CTA */}
             <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary inline-block text-lg"
-            >
-              👉 Quero agendar minha avaliação
-            </a>
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-primary inline-block text-lg"
+  onClick={() => {
+    if (typeof window.fbq !== "undefined") {
+      window.fbq("track", "Contact");
+      window.fbq("track", "Lead");
+    }
+  }}
+>
+  👉 Quero agendar minha avaliação
+</a>
           </div>
         </div>
       </section>
@@ -473,9 +526,20 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
                 Cada cliente é único, e cada pele merece um protocolo pensado especialmente para suas necessidades.
               </p>
 
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary inline-block mt-4">
-                👉 Conhecer Melhor
-              </a>
+              <a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-primary inline-block mt-4"
+  onClick={() => {
+    if (typeof window.fbq !== "undefined") {
+      window.fbq("track", "Contact");
+      window.fbq("track", "Lead");
+    }
+  }}
+>
+  👉 Conhecer Melhor
+</a>
             </div>
           </div>
         </div>
@@ -684,20 +748,37 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
               <Mail className="w-10 h-10 text-accent mx-auto mb-4" />
               <h3 className="text-display text-lg mb-2">WhatsApp</h3>
               <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-accent hover:underline"
-              >
-                Envie uma mensagem
-              </a>
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-sm text-accent hover:underline"
+  onClick={() => {
+    if (typeof window.fbq !== "undefined") {
+      window.fbq("track", "Contact");
+      window.fbq("track", "Lead");
+    }
+  }}
+>
+  Envie uma mensagem
+</a>
             </Card>
           </div>
 
           <div className="mt-12 text-center">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary text-lg">
-              Quero Agendar Minha Avaliação
-            </a>
+            <a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-primary text-lg"
+  onClick={() => {
+    if (typeof window.fbq !== "undefined") {
+      window.fbq("track", "Contact");
+      window.fbq("track", "Lead");
+    }
+  }}
+>
+  Quero Agendar Minha Avaliação
+</a>
           </div>
         </div>
       </section>
@@ -729,7 +810,22 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
               <h4 className="text-display text-sm font-semibold mb-4">Redes Sociais</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="https://instagram.com/kairosestetica.sjc" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition">Instagram</a></li>
-                <li><a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition">WhatsApp</a></li>
+                <li>
+  <a
+    href={whatsappLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-accent transition"
+    onClick={() => {
+      if (typeof window.fbq !== "undefined") {
+        window.fbq("track", "Contact");
+        window.fbq("track", "Lead");
+      }
+    }}
+  >
+    WhatsApp
+  </a>
+</li>
                 <li><a href="https://www.facebook.com/share/1BErqGoA1N/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition">Facebook</a></li>
               </ul>
             </div>
@@ -757,10 +853,11 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
   className="btn-whatsapp"
   title="Abrir WhatsApp"
   onClick={() => {
-    if (typeof window.fbq !== "undefined") {
-      window.fbq("track", "Lead");
-    }
-  }}
+  if (typeof window.fbq !== "undefined") {
+    window.fbq("track", "Contact");
+    window.fbq("track", "Lead");
+  }
+}}
       >
         <img
   src="/whatsapp.png"
