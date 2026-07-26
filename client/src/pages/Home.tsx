@@ -750,12 +750,17 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
       </footer>
 
       {/* WhatsApp Floating Button */}
-      <a
-        href={whatsappLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn-whatsapp"
-        title="Abrir WhatsApp"
+<a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-whatsapp"
+  title="Abrir WhatsApp"
+  onClick={() => {
+    if (typeof window.fbq !== "undefined") {
+      window.fbq("track", "Lead");
+    }
+  }}
       >
         <img
   src="/whatsapp.png"
