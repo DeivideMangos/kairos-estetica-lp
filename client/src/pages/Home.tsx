@@ -39,7 +39,7 @@ Melhor horário para contato: ${formData.horario}.`;
     // Dispara os eventos do Meta Pixel
     if (typeof window.fbq !== "undefined") {
       window.fbq("track", "Contact");
-      window.fbq("track", "Lead");
+      window.fbq("track", "Lead", {});
     }
 
     const whatsappUrl = `https://wa.me/5512988980812?text=${encodeURIComponent(
@@ -71,7 +71,7 @@ Melhor horário para contato: ${formData.horario}.`;
   onClick={() => {
     if (typeof window.fbq !== "undefined") {
       window.fbq("track", "Contact");
-      window.fbq("track", "Lead");
+      window.fbq("track", "Lead", {});
     }
   }}
 >
@@ -111,7 +111,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
   onClick={() => {
     if (typeof window.fbq !== "undefined") {
       window.fbq("track", "Contact");
-      window.fbq("track", "Lead");
+      window.fbq("track", "Lead", {});
     }
   }}
 >
@@ -375,7 +375,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
   onClick={() => {
     if (typeof window.fbq !== "undefined") {
       window.fbq("track", "Contact");
-      window.fbq("track", "Lead");
+      window.fbq("track", "Lead", {});
     }
   }}
 >
@@ -534,7 +534,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
   onClick={() => {
     if (typeof window.fbq !== "undefined") {
       window.fbq("track", "Contact");
-      window.fbq("track", "Lead");
+      window.fbq("track", "Lead", {});
     }
   }}
 >
@@ -755,7 +755,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
   onClick={() => {
     if (typeof window.fbq !== "undefined") {
       window.fbq("track", "Contact");
-      window.fbq("track", "Lead");
+      window.fbq("track", "Lead", {});
     }
   }}
 >
@@ -773,7 +773,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
   onClick={() => {
     if (typeof window.fbq !== "undefined") {
       window.fbq("track", "Contact");
-      window.fbq("track", "Lead");
+      window.fbq("track", "Lead", {});
     }
   }}
 >
@@ -819,7 +819,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
     onClick={() => {
       if (typeof window.fbq !== "undefined") {
         window.fbq("track", "Contact");
-        window.fbq("track", "Lead");
+        window.fbq("track", "Lead", {});
       }
     }}
   >
@@ -855,7 +855,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
   onClick={() => {
   if (typeof window.fbq !== "undefined") {
     window.fbq("track", "Contact");
-    window.fbq("track", "Lead");
+    window.fbq("track", "Lead", {});
   }
 }}
       >
