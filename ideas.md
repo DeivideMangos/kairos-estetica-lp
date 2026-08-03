@@ -1,7 +1,7 @@
 # Kairós Estética - Estratégia de Design
 
 ## Referência Inspiradora
-Landing Page Premium para clínica de estética de alto padrão em São José dos Campos, focada no Protocolo de Inverno. Deve superar em qualidade visual e experiência do usuário referências como Royal Face, Espaçolaser e grandes clínicas estéticas do Brasil.
+Landing Page Premium para clínica de estética de alto padrão em São José dos Campos, focada no Protocolo Pele Renovada de Inverno. Deve superar em qualidade visual e experiência do usuário referências como Royal Face, Espaçolaser e grandes clínicas estéticas do Brasil.
 
 ---
 

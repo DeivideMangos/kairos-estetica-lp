@@ -32,7 +32,7 @@ Meu nome é ${formData.nome}.
 
 Meu WhatsApp é: ${formData.whatsapp}.
 
-Gostaria de agendar uma avaliação para o Protocolo de Inverno.
+Gostaria de agendar uma avaliação para o Protocolo Pele Renovada de Inverno.
 
 Melhor horário para contato: ${formData.horario}.`;
 
@@ -89,19 +89,17 @@ Melhor horário para contato: ${formData.horario}.`;
               <div>
                 <p className="text-subtitle mb-2">PROTOCOLO FACIAL DE INVERNO</p>
                 <h1 className="text-display text-5xl md:text-6xl leading-tight">
-                  Cuidado facial
-personalizado
-para o Inverno
+                  Sua pele sente o inverno.<br />
+Mas você não precisa sentir os efeitos dele.
                 </h1>
                 <p className="text-2xl text-muted-foreground mt-4 font-light">
-                  Sua pele sente o frio.
-Seu cuidado faz toda diferença.
+                  Um protocolo completo para renovar, hidratar e devolver o viço da sua pele nos dias mais frios.
                 </p>
               </div>
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-md">
+              {/*<p className="text-lg text-muted-foreground leading-relaxed max-w-md">
                 O inverno pode deixar a pele mais ressecada, sensível e sem viço.
 Na Kairós, cada atendimento começa com uma avaliação individual para indicar o cuidado ideal para a sua pele, com protocolos que devolvem hidratação, luminosidade e bem-estar.
-              </p>
+              </p>*/}
               <div className="flex flex-col sm:flex-row gap-4 pt-4 mb-[25px]">
                 <a
   href={whatsappLink}
@@ -118,7 +116,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
   Quero recuperar minha pele
 </a>
                 <a href="#protocolo" className="btn-secondary">
-                  Conhecer o Protocolo
+                  Falar no WhatsApp
                 </a>
               </div>
             </div>
@@ -128,7 +126,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
           <div className="relative h-full min-h-[600px] overflow-hidden">
             <img
               src="/foto1.1.jpg"
-              alt="Protocolo de Inverno"
+              alt="Protocolo Pele Renovada de Inverno"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background/20"></div>
@@ -173,125 +171,217 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
   </div>
 </section>
 
-{/* Storytelling Section */}
-      <section className="bg-secondary py-10 md:py-20">
-        <div className="container max-w-4xl">
-          <div className="space-y-8 text-center">
-            <h2 className="text-display text-3xl md:text-5xl">
-              Por que cuidar da pele no inverno?
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Durante o inverno, a pele enfrenta desafios únicos: queda de umidade, ressecamento, alterações de temperatura e redução de luminosidade natural. É exatamente neste período que os procedimentos estéticos oferecem resultados mais visíveis e duradouros.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
-              <div className="space-y-3">
-                <Droplets className="w-8 h-8 text-accent mx-auto" />
-                <h3 className="text-display text-xl">Hidratação Profunda</h3>
-                <p className="text-sm text-muted-foreground">Recupere a umidade perdida com protocolos específicos</p>
-              </div>
-              <div className="space-y-3">
-                <Sparkles className="w-8 h-8 text-accent mx-auto" />
-                <h3 className="text-display text-xl">Luminosidade</h3>
-                <p className="text-sm text-muted-foreground">Restaure o brilho natural e a vitalidade da pele</p>
-              </div>
-              <div className="space-y-3">
-                <Heart className="w-8 h-8 text-accent mx-auto" />
-                <h3 className="text-display text-xl">Rejuvenescimento</h3>
-                <p className="text-sm text-muted-foreground">Estimule a produção de colágeno e elastina</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+{/* Por que sua pele muda no inverno */}
+<section className="bg-secondary py-10 md:py-20">
+  <div className="container max-w-5xl">
+    <div className="space-y-8 text-center">
+      <h2 className="text-display text-3xl md:text-5xl">
+        Por que sua pele muda no inverno?
+      </h2>
 
-      {/* Protocolo Section */}
-      <section id="protocolo" className="py-10 md:py-20">
-        <div className="container max-w-4xl">
-          <h2 className="text-display text-3xl md:text-5xl text-center mb-4">
-            O Protocolo de Inverno
-          </h2>
-          <p className="text-center text-muted-foreground mb-8 md:mb-12">
-            Um programa completo e personalizado para transformar sua pele
+      <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+        As baixas temperaturas, o vento frio e os banhos quentes reduzem a
+        hidratação natural da pele, deixando-a mais sensível, opaca e sem vida.
+      </p>
+
+      <div className="bg-white rounded-2xl shadow-lg border border-accent/20 p-8 max-w-2xl mx-auto">
+        <h3 className="text-display text-2xl text-primary">
+          Cuidar da pele no inverno não é luxo.
+          <br />
+          É necessidade.
+        </h3>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
+        <div className="space-y-3">
+          <Droplets className="w-8 h-8 text-accent mx-auto" />
+          <h3 className="text-display text-xl">
+            Hidratação Profunda
+          </h3>
+          <p className="text-sm text-muted-foreground">
+            Recupera a hidratação natural da pele, reduzindo o ressecamento.
           </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:p-8">
-            <Card className="p-5 md:p-8 border-border shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="text-display text-2xl mb-4">Como Funciona</h3>
-              <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <span className="text-accent font-bold">1.</span>
-                  <div>
-                    <p className="font-semibold">Avaliação Personalizada</p>
-                    <p className="text-sm text-muted-foreground">Análise completa da sua pele e necessidades</p>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-accent font-bold">2.</span>
-                  <div>
-                    <p className="font-semibold">Procedimento Específico</p>
-                    <p className="text-sm text-muted-foreground">Tratamento customizado para seu tipo de pele</p>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-accent font-bold">3.</span>
-                  <div>
-                    <p className="font-semibold">Cuidados Contínuos</p>
-                    <p className="text-sm text-muted-foreground">Orientações e produtos para manutenção</p>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-accent font-bold">4.</span>
-                  <div>
-                    <p className="font-semibold">Resultados Visíveis</p>
-                    <p className="text-sm text-muted-foreground">Transformação gradual e duradoura</p>
-                  </div>
-                </li>
-              </ul>
-            </Card>
-
-            <Card className="p-5 md:p-8 border-border shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="text-display text-2xl mb-4">Para Quem é Indicado</h3>
-              <p className="text-muted-foreground mb-6">
-                O Protocolo de Inverno é ideal para quem busca:
-              </p>
-              <ul className="space-y-3">
-                <li className="flex gap-2">
-                  <Zap className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span>Renovação completa da pele</span>
-                </li>
-                <li className="flex gap-2">
-                  <Droplets className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span>Hidratação profunda</span>
-                </li>
-                <li className="flex gap-2">
-                  <Sparkles className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span>Restauração de luminosidade</span>
-                </li>
-                <li className="flex gap-2">
-                  <Shield className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span>Proteção e fortalecimento</span>
-                </li>
-                <li className="flex gap-2">
-                  <Smile className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span>Autoestima e bem-estar</span>
-                </li>
-              </ul>
-            </Card>
-          </div>
         </div>
-      </section>
+
+        <div className="space-y-3">
+          <Sparkles className="w-8 h-8 text-accent mx-auto" />
+          <h3 className="text-display text-xl">
+            Mais Viço e Luminosidade
+          </h3>
+          <p className="text-sm text-muted-foreground">
+            Devolve o brilho natural e a aparência saudável da pele.
+          </p>
+        </div>
+
+        <div className="space-y-3">
+          <Heart className="w-8 h-8 text-accent mx-auto" />
+          <h3 className="text-display text-xl">
+            Pele Mais Macia e Saudável
+          </h3>
+          <p className="text-sm text-muted-foreground">
+            Fortalece a barreira de proteção e melhora a textura da pele.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      {/* Protocolo Pele Renovada de Inverno */}
+<section id="protocolo" className="py-10 md:py-20">
+  <div className="container max-w-4xl">
+
+    <div className="text-center mb-12">
+      <h2 className="text-display text-3xl md:text-5xl mb-4">
+        A boa notícia
+      </h2>
+
+      <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+        Tem solução e pode ser mais simples do que você imagina.
+      </p>
+
+      <p className="text-lg leading-relaxed max-w-3xl mx-auto">
+        Nosso <strong>Protocolo Pele Renovada de Inverno</strong> combina
+        tecnologia, ativos de alta performance e um atendimento totalmente
+        personalizado para devolver à pele aquilo que o inverno costuma retirar:
+      </p>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 max-w-3xl mx-auto">
+        <div className="bg-secondary rounded-xl p-4">
+          <Droplets className="w-8 h-8 text-accent mx-auto mb-2" />
+          <p className="font-semibold">Hidratação</p>
+        </div>
+
+        <div className="bg-secondary rounded-xl p-4">
+          <Shield className="w-8 h-8 text-accent mx-auto mb-2" />
+          <p className="font-semibold">Equilíbrio</p>
+        </div>
+
+        <div className="bg-secondary rounded-xl p-4">
+          <Sparkles className="w-8 h-8 text-accent mx-auto mb-2" />
+          <p className="font-semibold">Luminosidade</p>
+        </div>
+
+        <div className="bg-secondary rounded-xl p-4">
+          <Heart className="w-8 h-8 text-accent mx-auto mb-2" />
+          <p className="font-semibold">Aparência saudável</p>
+        </div>
+      </div>
+
+      <Button
+        size="lg"
+        className="mt-10"
+        onClick={() => scrollToSection("contato")}
+      >
+        Quero conhecer meu protocolo
+      </Button>
+    </div>
+
+    <h2 className="text-display text-3xl md:text-5xl text-center mb-4">
+      Protocolo Pele Renovada de Inverno
+    </h2>
+
+    <p className="text-center text-muted-foreground mb-8 md:mb-12">
+      Um protocolo completo, personalizado e pensado para renovar, hidratar e devolver o viço natural da sua pele durante o inverno.
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:p-8">
+
+      <Card className="p-5 md:p-8 border-border shadow-sm hover:shadow-md transition-shadow">
+        <h3 className="text-display text-2xl mb-4">
+          Como funciona
+        </h3>
+
+        <ul className="space-y-4">
+          <li className="flex gap-3">
+            <span className="text-accent font-bold">1.</span>
+            <div>
+              <p className="font-semibold">Avaliação personalizada</p>
+              <p className="text-sm text-muted-foreground">
+                Entendemos as necessidades da sua pele antes de iniciar qualquer procedimento.
+              </p>
+            </div>
+          </li>
+
+          <li className="flex gap-3">
+            <span className="text-accent font-bold">2.</span>
+            <div>
+              <p className="font-semibold">Protocolo personalizado</p>
+              <p className="text-sm text-muted-foreground">
+                Selecionamos os procedimentos ideais para proporcionar os melhores resultados.
+              </p>
+            </div>
+          </li>
+
+          <li className="flex gap-3">
+            <span className="text-accent font-bold">3.</span>
+            <div>
+              <p className="font-semibold">Tecnologia e ativos premium</p>
+              <p className="text-sm text-muted-foreground">
+                Utilizamos produtos e técnicas que potencializam a renovação da pele.
+              </p>
+            </div>
+          </li>
+
+          <li className="flex gap-3">
+            <span className="text-accent font-bold">4.</span>
+            <div>
+              <p className="font-semibold">Resultados naturais</p>
+              <p className="text-sm text-muted-foreground">
+                Pele mais hidratada, luminosa e saudável desde as primeiras sessões.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </Card>
+
+      <Card className="p-5 md:p-8 border-border shadow-sm hover:shadow-md transition-shadow">
+        <h3 className="text-display text-2xl mb-4">
+          Ideal para quem deseja
+        </h3>
+
+        <ul className="space-y-3">
+          <li className="flex gap-2">
+            <Zap className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+            <span>Renovar completamente a pele</span>
+          </li>
+
+          <li className="flex gap-2">
+            <Droplets className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+            <span>Recuperar a hidratação natural</span>
+          </li>
+
+          <li className="flex gap-2">
+            <Sparkles className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+            <span>Devolver viço e luminosidade</span>
+          </li>
+
+          <li className="flex gap-2">
+            <Shield className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+            <span>Fortalecer a barreira da pele</span>
+          </li>
+
+          <li className="flex gap-2">
+            <Smile className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+            <span>Recuperar a autoestima e o bem-estar</span>
+          </li>
+        </ul>
+      </Card>
+
+    </div>
+  </div>
+</section>
 
 
 {/* Benefícios */}
 <section id="beneficios" className="bg-secondary py-10 md:py-20">
   <div className="container max-w-5xl">
     <h2 className="text-display text-3xl md:text-5xl text-center mb-4">
-      Benefícios do Protocolo
+      Benefícios que você vê e sente
     </h2>
 
     <p className="text-center text-muted-foreground mb-8 md:mb-12 max-w-2xl mx-auto">
-      Um tratamento completo para renovar sua pele, devolver o viço natural e
-      proporcionar mais saúde, beleza e autoestima.
+      Resultados reais para sua rotina e autoestima.
     </p>
 
     <Card className="p-6 md:p-10 border-border shadow-lg">
@@ -337,50 +427,64 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
             </div>
 
             {/* Título */}
-            <h2 className="text-display text-3xl md:text-5xl">
-              Um momento de cuidado para sua pele neste inverno.
-            </h2>
+             <h2 className="text-display text-3xl md:text-5xl">
+          Um momento de cuidado para sua pele neste inverno.
+        </h2>
 
-            {/* Descrição */}
-            <div className="space-y-4 text-muted-foreground max-w-2xl mx-auto">
-              <p>
-                A Limpeza de Pele com Peeling de Diamante da Kairós foi pensada para promover renovação, hidratação e sensação de leveza para a sua pele durante os dias mais frios.
-              </p>
-              <p>
-                Atendimento personalizado, ambiente acolhedor e cuidado individualizado em cada detalhe.
-              </p>
-            </div>
+        <div className="space-y-4 text-muted-foreground">
+          <p>
+            O <strong>Protocolo Pele Renovada de Inverno</strong> reúne limpeza
+            de pele, peeling de diamante (quando indicado) e cuidados
+            personalizados para renovar, hidratar e devolver o viço natural da
+            pele.
+          </p>
 
-            {/* Separador elegante */}
-            <div className="flex items-center justify-center gap-4">
-              <div className="h-px w-12 bg-accent opacity-40"></div>
-              <Sparkles className="w-5 h-5 text-accent opacity-40" />
-              <div className="h-px w-12 bg-accent opacity-40"></div>
-            </div>
+          <p>
+            Atendimento individual, ambiente acolhedor e avaliação personalizada
+            para indicar o protocolo ideal para a sua pele.
+          </p>
+        </div>
 
-            {/* Valor */}
-            <div className="space-y-2">
-              <p className="text-muted-foreground text-sm">Limpeza de Pele + Peeling de Diamante (quando indicado)</p>
-              <p className="text-5xl md:text-6xl text-accent font-light tracking-wide">
-                R$ 179,90
-              </p>
-            </div>
+        {/* Valores */}
+        <div className="space-y-2">
 
-            {/* CTA */}
-            <a
-  href={whatsappLink}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="btn-primary inline-block text-lg"
-  onClick={() => {
-    if (typeof window.fbq !== "undefined") {
-      window.fbq("track", "Contact");
-      window.fbq("track", "Lead", {});
-    }
-  }}
->
-  👉 Quero agendar minha avaliação
-</a>
+          <p className="text-muted-foreground text-lg">
+            De
+          </p>
+
+          <p className="text-2xl text-muted-foreground line-through">
+            R$ 229,90
+          </p>
+
+          <p className="text-muted-foreground text-lg">
+            Por
+          </p>
+
+          <p className="text-5xl md:text-6xl text-accent font-bold">
+            R$ 179,90
+          </p>
+
+          <p className="text-sm text-muted-foreground">
+            Avaliação personalizada inclusa.
+          </p>
+
+        </div>
+
+        {/* Botão */}
+        <a
+          href={whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary inline-block text-lg"
+          onClick={() => {
+            if (typeof window.fbq !== "undefined") {
+              window.fbq("track", "Contact");
+              window.fbq("track", "Lead", {});
+            }
+          }}
+        >
+          👉 Quero agendar minha avaliação
+        </a>
           </div>
         </div>
       </section>
@@ -441,7 +545,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
       <Card className="overflow-hidden border-border shadow-lg">
         <div className="p-5 md:p-8 text-center">
           <h3 className="text-display text-3xl mb-4">
-            Resultados Reais
+            Resultados reais. Pessoas reais.
           </h3>
 
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
@@ -449,20 +553,18 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
           </p>
 
   <img
-    src="/antesedepois.jpg"
+    src="/antesedepois.jpeg"
     alt="Antes e depois de limpeza de pele"
     className="block w-full max-w-sm md:max-w-lg mx-auto rounded-2xl shadow-lg"
   />
 
           <div className="mt-8">
             <h4 className="text-display text-2xl mb-4">
-              Limpeza de Pele Profissional
+              Protocolo Pele Renovada de Inverno
             </h4>
 
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              Resultado real após protocolo personalizado de limpeza de pele,
-              promovendo redução da oleosidade, remoção de impurezas e melhora
-              visível da textura e aparência da pele.
+              As imagens são utilizadas mediante autorização. Os resultados variam conforme as características individuais de cada pele.
             </p>
 
             <div className="flex flex-wrap justify-center gap-3 mt-6">
@@ -508,7 +610,7 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
             {/* Texto */}
             <div className="order-1 md:order-2 space-y-4 md:space-y-6">
               <div>
-                <p className="text-subtitle mb-2">Quem é a Kairós</p>
+                <p className="text-subtitle mb-2">Quem cuida de você</p>
                 <h2 className="text-display text-3xl md:text-5xl">
                   Meu nome é Rosana Sales.
                 </h2>
@@ -550,10 +652,10 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
 <section className="py-10 md:py-20 bg-secondary">
   <div className="container max-w-5xl">
     <h2 className="text-display text-3xl md:text-5xl text-center mb-4">
-      Resultados Reais
+      Resultados reais. Pessoas reais.
     </h2>
     <p className="text-center text-muted-foreground mb-8 md:mb-12">
-      Veja a transformação que o Protocolo de Inverno proporciona
+      Veja a transformação que o Protocolo Pele Renovada de Inverno proporciona
     </p>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -646,62 +748,60 @@ Na Kairós, cada atendimento começa com uma avaliação individual para indicar
                 type="submit"
                 className="btn-primary w-full text-lg"
               >
-                ✨ Quero receber atendimento
+                ✨ Quero ser atendida
               </button>
             </form>
           </Card>
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="bg-secondary py-10 md:py-20">
-        <div className="container max-w-3xl">
-          <h2 className="text-display text-3xl md:text-5xl text-center mb-8 md:mb-12">
-            Perguntas Frequentes
-          </h2>
+      <div className="space-y-4">
+  {[
+    {
+      q: "O protocolo é doloroso?",
+      a: "Não. O atendimento é realizado de forma confortável e personalizada, respeitando a sensibilidade da sua pele."
+    },
+    {
+      q: "Quanto tempo dura o atendimento?",
+      a: "Em média, cerca de 2 horas. Cada etapa é realizada com calma para garantir um resultado de alta qualidade."
+    },
+    {
+      q: "Tenho mais de 50 anos. Esse protocolo é indicado para mim?",
+      a: "Sim. A avaliação inicial permite adaptar o protocolo às necessidades da pele madura."
+    },
+    {
+      q: "Em quanto tempo vejo resultados?",
+      a: "A pele costuma apresentar mais luminosidade, maciez e sensação de hidratação logo após o procedimento. Os resultados variam conforme cada pele."
+    },
+    {
+      q: "Posso fazer mesmo tendo pele sensível?",
+      a: "Sim, desde que não exista contraindicação identificada na avaliação. O protocolo é personalizado para cada paciente."
+    },
+    {
+      q: "O valor inclui avaliação?",
+      a: "Sim. A avaliação personalizada já está incluída no atendimento."
+    },
+  ].map((faq, idx) => (
+    <Card
+      key={idx}
+      className="p-6 border-border cursor-pointer hover:shadow-md transition-shadow"
+      onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}
+    >
+      <div className="flex justify-between items-start gap-4">
+        <h3 className="text-display text-lg flex-1">{faq.q}</h3>
+        <span className="text-accent text-xl flex-shrink-0">
+          {expandedFaq === idx ? "−" : "+"}
+        </span>
+      </div>
 
-          <div className="space-y-4">
-            {[
-              {
-                q: "Quanto tempo dura cada sessão?",
-                a: "Cada sessão do Protocolo de Inverno dura em média 60 a 90 minutos, dependendo dos procedimentos realizados."
-              },
-              {
-                q: "Dói durante o procedimento?",
-                a: "Utilizamos técnicas e produtos que garantem conforto total."
-              },
-              {
-                q: "Existe período de recuperação?",
-                a: "Mínimo. Você pode retomar suas atividades normais imediatamente. Alguns procedimentos podem deixar a pele levemente avermelhada por poucas horas."
-              },
-              {
-                q: "Quem pode fazer o protocolo?",
-                a: "Praticamente todos. Durante a avaliação, analisamos seu tipo de pele e histórico para personalizar o tratamento."
-              },
-              {
-                q: "Quantas sessões são necessárias?",
-                a: "Recomendamos um ciclo de 4 a 6 sessões para resultados ótimos, com intervalos de 2 a 3 semanas entre elas."
-              },
-            ].map((faq, idx) => (
-              <Card
-                key={idx}
-                className="p-6 border-border cursor-pointer hover:shadow-md transition-shadow"
-                onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}
-              >
-                <div className="flex justify-between items-start gap-4">
-                  <h3 className="text-display text-lg flex-1">{faq.q}</h3>
-                  <span className="text-accent text-xl flex-shrink-0">
-                    {expandedFaq === idx ? "−" : "+"}
-                  </span>
-                </div>
-                {expandedFaq === idx && (
-                  <p className="text-muted-foreground mt-4">{faq.a}</p>
-                )}
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      {expandedFaq === idx && (
+        <p className="text-muted-foreground mt-4 leading-relaxed">
+          {faq.a}
+        </p>
+      )}
+    </Card>
+  ))}
+</div>
 
       {/* Contato Section */}
       <section id="contato" className="py-10 md:py-20">
