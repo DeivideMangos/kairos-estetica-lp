@@ -505,109 +505,6 @@ Melhor horário para contato: ${formData.horario}.`;
   </div>
 </section>
 
-      {/* Bloco de Investimento */}
-<section className="py-10 md:py-20 bg-gradient-to-b from-background to-secondary/30">
-  <div className="container max-w-5xl">
-    <div className="text-center space-y-8">
-
-      {/* Ícone decorativo */}
-      <div className="flex justify-center">
-        <Sparkles className="w-12 h-12 text-accent opacity-60" />
-      </div>
-
-      {/* Título */}
-      <h2 className="text-display text-3xl md:text-5xl">
-        Um momento de cuidado para sua pele neste inverno.
-      </h2>
-
-      {/* Descrição */}
-      <div className="space-y-4 text-muted-foreground max-w-3xl mx-auto">
-        <p>
-          O <strong>Protocolo Pele Renovada de Inverno</strong> reúne limpeza de
-          pele, peeling de diamante (quando indicado) e cuidados personalizados
-          para renovar, hidratar e devolver o viço natural da pele.
-        </p>
-
-        <p>
-          Atendimento individual, ambiente acolhedor e avaliação personalizada
-          para indicar o protocolo ideal para a sua pele.
-        </p>
-      </div>
-
-      {/* Oferta + Benefícios */}
-      <div className="grid md:grid-cols-2 gap-10 items-center">
-
-        {/* Oferta */}
-        <div className="space-y-3">
-
-          <p className="text-muted-foreground text-lg">
-            De
-          </p>
-
-          <p className="text-2xl text-muted-foreground line-through">
-            R$ 229,90
-          </p>
-
-          <p className="text-muted-foreground text-lg">
-            Por
-          </p>
-
-          <p className="text-5xl md:text-6xl text-accent font-bold">
-            R$ 179,90
-          </p>
-
-          <p className="text-base font-medium text-accent">
-            Avaliação personalizada inclusa.
-          </p>
-
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary inline-block text-lg mt-6"
-            onClick={() => {
-              if (typeof window.fbq !== "undefined") {
-                window.fbq("track", "Contact");
-                window.fbq("track", "Lead", {});
-              }
-            }}
-          >
-            👉 Quero agendar minha avaliação
-          </a>
-
-        </div>
-
-        {/* Benefícios */}
-        <div className="space-y-5 flex flex-col items-center md:items-start">
-
-          <div className="flex items-center gap-3">
-            <CheckCircle className="w-5 h-5 text-accent" />
-            <span>Vagas limitadas por dia</span>
-          </div>
-
-          <div className="flex items-center gap-3">
-            <CheckCircle className="w-5 h-5 text-accent" />
-            <span>Atendimento individual</span>
-          </div>
-
-          <div className="flex items-center gap-3">
-            <CheckCircle className="w-5 h-5 text-accent" />
-            <span>Ambiente exclusivo</span>
-          </div>
-
-          <div className="flex items-center gap-3">
-            <CheckCircle className="w-5 h-5 text-accent" />
-            <span>Tecnologia e ativos premium</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
       {/* Divider */}
 <div className="h-px bg-gradient-to-r from-background via-border to-background"></div>
 
@@ -696,7 +593,7 @@ Melhor horário para contato: ${formData.horario}.`;
             </h4>
 
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              Cada pele tem sua história. Nosso protocolo respeita a individualidade de cada paciente e busca resultados naturais e saudáveis.
+              As imagens são utilizadas mediante autorização. Os resultados variam conforme as características individuais de cada pele.
             </p>
 
             <div className="flex flex-wrap justify-center gap-3 mt-6">
@@ -861,6 +758,109 @@ Melhor horário para contato: ${formData.horario}.`;
 </section>
 */}
 
+{/* Bloco de Investimento */}
+<section className="py-10 md:py-20 bg-gradient-to-b from-background to-secondary/30">
+  <div className="container max-w-5xl">
+    <div className="text-center space-y-8">
+
+      {/* Ícone decorativo */}
+      <div className="flex justify-center">
+        <Sparkles className="w-12 h-12 text-accent opacity-60" />
+      </div>
+
+      {/* Título */}
+      <h2 className="text-display text-3xl md:text-5xl">
+        Um momento de cuidado para sua pele neste inverno.
+      </h2>
+
+      {/* Descrição */}
+      <div className="space-y-4 text-muted-foreground max-w-3xl mx-auto">
+        <p>
+          O <strong>Protocolo Pele Renovada de Inverno</strong> reúne limpeza de
+          pele, peeling de diamante (quando indicado) e cuidados personalizados
+          para renovar, hidratar e devolver o viço natural da pele.
+        </p>
+
+        <p>
+          Atendimento individual, ambiente acolhedor e avaliação personalizada
+          para indicar o protocolo ideal para a sua pele.
+        </p>
+      </div>
+
+      {/* Oferta + Benefícios */}
+      <div className="grid md:grid-cols-2 gap-10 items-center">
+
+        {/* Oferta */}
+        <div className="space-y-3">
+
+          <p className="text-muted-foreground text-lg">
+            De
+          </p>
+
+          <p className="text-2xl text-muted-foreground line-through">
+            R$ 229,90
+          </p>
+
+          <p className="text-muted-foreground text-lg">
+            Por
+          </p>
+
+          <p className="text-5xl md:text-6xl text-accent font-bold">
+            R$ 179,90
+          </p>
+
+          <p className="text-base font-medium text-accent">
+            Avaliação personalizada inclusa.
+          </p>
+
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary inline-block text-lg mt-6"
+            onClick={() => {
+              if (typeof window.fbq !== "undefined") {
+                window.fbq("track", "Contact");
+                window.fbq("track", "Lead", {});
+              }
+            }}
+          >
+            👉 Quero agendar minha avaliação
+          </a>
+
+        </div>
+
+        {/* Benefícios */}
+        <div className="space-y-5 flex flex-col items-center md:items-start">
+
+          <div className="flex items-center gap-3">
+            <CheckCircle className="w-5 h-5 text-accent" />
+            <span>Vagas limitadas por dia</span>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <CheckCircle className="w-5 h-5 text-accent" />
+            <span>Atendimento individual</span>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <CheckCircle className="w-5 h-5 text-accent" />
+            <span>Ambiente exclusivo</span>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <CheckCircle className="w-5 h-5 text-accent" />
+            <span>Tecnologia e ativos premium</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
       {/* Formulário de Contato */}
       <section className="py-10 md:py-20">
         <div className="container max-w-2xl">
@@ -921,53 +921,73 @@ Melhor horário para contato: ${formData.horario}.`;
         </div>
       </section>
 
-      <div className="space-y-4">
-  {[
-    {
-      q: "O protocolo é doloroso?",
-      a: "Não. O atendimento é realizado de forma confortável e personalizada, respeitando a sensibilidade da sua pele."
-    },
-    {
-      q: "Quanto tempo dura o atendimento?",
-      a: "Em média, cerca de 2 horas. Cada etapa é realizada com calma para garantir um resultado de alta qualidade."
-    },
-    {
-      q: "Tenho mais de 50 anos. Esse protocolo é indicado para mim?",
-      a: "Sim. A avaliação inicial permite adaptar o protocolo às necessidades da pele madura."
-    },
-    {
-      q: "Em quanto tempo vejo resultados?",
-      a: "A pele costuma apresentar mais luminosidade, maciez e sensação de hidratação logo após o procedimento. Os resultados variam conforme cada pele."
-    },
-    {
-      q: "Posso fazer mesmo tendo pele sensível?",
-      a: "Sim, desde que não exista contraindicação identificada na avaliação. O  é personalizado para cada paciente."
-    },
-    {
-      q: "O valor inclui avaliação?",
-      a: "Sim. A avaliação personalizada já está incluída no atendimento."
-    },
-  ].map((faq, idx) => (
-    <Card
-      key={idx}
-      className="p-6 border-border cursor-pointer hover:shadow-md transition-shadow"
-      onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}
-    >
-      <div className="flex justify-between items-start gap-4">
-        <h3 className="text-display text-lg flex-1">{faq.q}</h3>
-        <span className="text-accent text-xl flex-shrink-0">
-          {expandedFaq === idx ? "−" : "+"}
-        </span>
-      </div>
+      
 
-      {expandedFaq === idx && (
-        <p className="text-muted-foreground mt-4 leading-relaxed">
-          {faq.a}
-        </p>
-      )}
-    </Card>
-  ))}
-</div>
+      {/* FAQ */}
+<section className="py-10 md:py-20 bg-secondary">
+  <div className="container max-w-3xl">
+
+    <div className="text-center mb-10">
+      <h2 className="text-display text-3xl md:text-5xl">
+        Perguntas Frequentes
+      </h2>
+
+      <p className="text-muted-foreground mt-3">
+        Tire suas principais dúvidas sobre o Protocolo Pele Renovada de Inverno.
+      </p>
+    </div>
+
+    <div className="space-y-4">
+      {[
+        {
+          q: "O protocolo é doloroso?",
+          a: "Não. O atendimento é realizado de forma confortável e personalizada, respeitando a sensibilidade da sua pele."
+        },
+        {
+          q: "Quanto tempo dura o atendimento?",
+          a: "Em média, cerca de 2 horas. Cada etapa é realizada com calma para garantir um resultado de alta qualidade."
+        },
+        {
+          q: "Tenho mais de 50 anos. Esse protocolo é indicado para mim?",
+          a: "Sim. A avaliação inicial permite adaptar o protocolo às necessidades da pele madura."
+        },
+        {
+          q: "Em quanto tempo vejo resultados?",
+          a: "A pele costuma apresentar mais luminosidade, maciez e sensação de hidratação logo após o procedimento. Os resultados variam conforme cada pele."
+        },
+        {
+          q: "Posso fazer mesmo tendo pele sensível?",
+          a: "Sim, desde que não exista contraindicação identificada na avaliação. O protocolo é personalizado para cada paciente."
+        },
+        {
+          q: "O valor inclui avaliação?",
+          a: "Sim. A avaliação personalizada já está incluída no atendimento."
+        },
+      ].map((faq, idx) => (
+        <Card
+          key={idx}
+          className="p-6 border-border cursor-pointer hover:shadow-md transition-shadow"
+          onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}
+        >
+          <div className="flex justify-between items-start gap-4">
+            <h3 className="text-display text-lg flex-1">{faq.q}</h3>
+
+            <span className="text-accent text-xl flex-shrink-0">
+              {expandedFaq === idx ? "−" : "+"}
+            </span>
+          </div>
+
+          {expandedFaq === idx && (
+            <p className="text-muted-foreground mt-4 leading-relaxed">
+              {faq.a}
+            </p>
+          )}
+        </Card>
+      ))}
+    </div>
+
+  </div>
+</section>
 
       {/* Contato Section */}
       <section id="contato" className="py-10 md:py-20">
