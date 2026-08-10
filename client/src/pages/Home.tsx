@@ -580,7 +580,7 @@ Melhor horário para contato: ${formData.horario}.`;
   />
 
   <img
-    src="/antesedepois.jpeg"
+    src="/antesedepois1.jpg"
     alt="Antes e depois - Pele Madura"
     className="w-full max-w-md h-[300px] object-cover rounded-2xl shadow-lg bg-white"
   />
@@ -667,7 +667,7 @@ Melhor horário para contato: ${formData.horario}.`;
             <div className="order-2 md:order-1">
               <div className="relative overflow-hidden rounded-lg shadow-lg">
                 <img
-                  src="foto1.1.jpg"
+                  src="rosana.jpg"
                   alt="Rosana Sales"
                   className="w-full h-full object-cover"
                 />
