@@ -5,6 +5,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import RejuvenescimentoFacial from "./pages/RejuvenescimentoFacial";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import LGPD from "./pages/LGPD";
@@ -14,6 +15,7 @@ function Router() {
   return (
     <Switch>
       <Route path={"//"} component={Home} />
+      <Route path={"/rejuvenescimento-facial-sjc"} component={RejuvenescimentoFacial} />
       <Route path={"/privacy"} component={PrivacyPolicy} />
       <Route path={"/terms"} component={TermsOfUse} />
       <Route path={"/lgpd"} component={LGPD} />
